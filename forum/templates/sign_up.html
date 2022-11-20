@@ -16,14 +16,18 @@
                     <h1>Регистрация</h1>
                     <p>Добро пожаловать на проект Real life rp. Я помогу Вам успешно <br>зарегистрировать учетную запись. Начнем!</p>
                 </div>
-                <form action="">
-                    <input type="text" placeholder="Логин">
+                {% block content %}
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <!--<input type="text" placeholder="Логин">
                     <input type="email" placeholder="Почта">
                     <input type="password" placeholder="Пароль">
                     <input type="password" placeholder="Повторите пароль">
-                    <p><input type="checkbox" id="cb1"><label for="cb1">Запомнить пароль</label></p>
+                    <p><input type="checkbox" id="cb1"><label for="cb1">Запомнить пароль</label></p>-->
                     <button type="submit">Продолжить</button>
                 </form>
+                {% endblock %}
                 <p class="p">Уже имеете аккаунт? <a href="{% url 'reg' %}">Войти <img src="{% static 'image/sign_in_up/Group.svg' %}" alt=""></a></p>
             </div>
         </div>

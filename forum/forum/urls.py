@@ -20,6 +20,6 @@ from ucp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home_page, name='home'),
-    path('Auth', views.sign_up_page, name='auth'),
-    path('Reg', views.sign_in_page, name='reg'),
+    path('Reg', views.SignUpView.as_view(), name='reg'),
+    path('Auth', views.sign_in_page, name='auth'),
 ]
