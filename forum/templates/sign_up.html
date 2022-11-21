@@ -19,7 +19,9 @@
                 {% block content %}
                 <form method="post">
                     {% csrf_token %}
-                    {{ form.as_p }}
+                    {{ form.nameuser }}
+                    {{ form.emailuser }}
+                    {{ form.password_one }}
                     <!--<input type="text" placeholder="Логин">
                     <input type="email" placeholder="Почта">
                     <input type="password" placeholder="Пароль">
