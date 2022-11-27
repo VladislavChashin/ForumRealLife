@@ -1,0 +1,168 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside, main{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter-Light.ttf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "PoppinsBold";
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: "Kaushan";
+    src: url(fonts/Sweet-Mavka-Script.otf);
+}
+
+body{
+    background: url(image/index/fon_2X.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+header{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 86%;
+    margin:auto;
+    padding-top: 19px;
+}
+.header_logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.header_logo p{
+    margin-left: 5%;
+    min-width:160px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    min-width: 550px;
+}
+nav a{
+    margin-right: 50px;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+nav a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    padding-bottom: 12px;
+}
+
+.header_button button{
+    font-family: 'PoppinsBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 9px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #fff;
+    color: #fff;
+}
+.header_button button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.subtitle p{
+    font-family: 'Kaushan';
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 102px;
+}
+.title p{
+    font-family: 'Kaushan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 213px;
+    line-height: 309px;
+}
+.but_play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.but_play button{
+    margin: 0px 20px 0px 20px;
+    font-family: 'Poppins';
+    background-color: rgba(255, 255, 255, 0);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    border-radius: 9px;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+}
+.but_play button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
