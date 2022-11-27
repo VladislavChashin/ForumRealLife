@@ -14,14 +14,13 @@
             <div class="content">
                 <div class="title">
                     <h1>Регистрация</h1>
-                    <p>Добро пожаловать на проект Real life rp. Я помогу Вам успешно <br>зарегистрировать учетную запись. Начнем!</p>
+                    <p>Добро пожаловать на проект Real life rp. Я помогу вам успешно <br>зарегистрировать учетную запись. Начнем!</p>
                 </div>
                 {% block content %}
                 <form method="post">
                     {% csrf_token %}
-                    {{ form.nameuser }}
-                    {{ form.emailuser }}
-                    {{ form.password_one }}
+                    {{ form }}
+                  
                     <!--<input type="text" placeholder="Логин">
                     <input type="email" placeholder="Почта">
                     <input type="password" placeholder="Пароль">
@@ -30,7 +29,7 @@
                     <button type="submit">Продолжить</button>
                 </form>
                 {% endblock %}
-                <p class="p">Уже имеете аккаунт? <a href="{% url 'reg' %}">Войти <img src="{% static 'image/sign_in_up/Group.svg' %}" alt=""></a></p>
+                <p class="p">Уже имеете аккаунт? <a href="{% url 'auth' %}">Войти <img src="{% static 'image/sign_in_up/Group.svg' %}" alt=""></a></p>
             </div>
         </div>
     </main>

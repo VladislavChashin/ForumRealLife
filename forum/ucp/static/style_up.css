@@ -210,7 +210,9 @@ form button:hover {
     border: 2px solid #000000;
     color: #ffffff;
 }
-
+form br {
+    display: none;
+}
 .p{
     color: #7F7F7F;
     font-family: 'Poppins';
@@ -231,4 +233,11 @@ form button:hover {
 }
 .p img{
     margin-top: 5px;
+}
+.helptext li{
+    color: #c4c4c4;
+    font-family: 'Poppins';
+    font-style: normal;
+    margin-top: 5px;
+    margin-left: 3px;
 }
