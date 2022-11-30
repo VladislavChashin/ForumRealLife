@@ -1,5 +1,5 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm, AuthenticationForm
 from .models import CustomUser
 from django.contrib.auth import password_validation
 
@@ -16,7 +16,7 @@ class CustomUserCreationForm(UserCreationForm):
         label=(""),
         strip=False,
         widget=forms.PasswordInput(attrs={"autocomplete": "new-password", "placeholder": "Пароль"}),
-        help_text=password_validation.password_validators_help_text_html()
+        help_text= ''
     )
      password2 = forms.CharField(
         label=(""),
@@ -33,4 +33,14 @@ class CustomUserChangeForm(UserChangeForm):
         model = CustomUser
         fields = ('username', 'email')
         
+class CustomAuthForm(AuthenticationForm):
+    username = forms.CharField(
+        label=(""),
+        widget=forms.TextInput(attrs={"placeholder": "Имя пользователя"}),
+    )
+    
+    password = forms.CharField(
+        label=(""),
+        widget=forms.PasswordInput(attrs={"placeholder": "Пароль"}),
+        )
         

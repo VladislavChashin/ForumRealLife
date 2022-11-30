@@ -38,3 +38,10 @@ form input{
     padding-left: 30px;  
     border-radius: 4px;
 }
+.errorlist li{
+    color: #ff0000;
+    font-family: 'Poppins';
+    font-style: normal;
+    margin-top: 5px;
+    margin-left: 3px;
+}

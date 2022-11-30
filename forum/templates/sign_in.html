@@ -17,11 +17,15 @@
                     <h1>Авторизация</h1>
                     <p>Для авторизации используйте ваш игровой аккаунт</p>
                 </div>
-                <form action="">
-                    <input type="email" placeholder="Почта">
-                    <input type="password" placeholder="Пароль">
+                {% block content %}
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <!--<input type="email" placeholder="Почта">
+                    <input type="password" placeholder="Пароль">-->
                     <button type="submit">Продолжить</button>
                 </form>
+                {% endblock %}
             </div>
         </div>
     </main>

@@ -234,8 +234,8 @@ form br {
 .p img{
     margin-top: 5px;
 }
-.helptext li{
-    color: #c4c4c4;
+.errorlist li{
+    color: #ff0000;
     font-family: 'Poppins';
     font-style: normal;
     margin-top: 5px;
